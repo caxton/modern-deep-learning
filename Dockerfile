@@ -130,6 +130,7 @@ RUN pip3 install torchvision
 #
 # PycURL
 #
+RUN apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev
 RUN pip3 install pycurl
 
 #
