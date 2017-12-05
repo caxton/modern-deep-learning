@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-MAINTAINER Waleed Abdulla <waleed.abdulla@gmail.com>
+MAINTAINER caxton <kaifu.chan@gmail.com>
 
 RUN apt-get update
 
@@ -126,6 +126,11 @@ RUN pip3 install --no-cache-dir git+https://github.com/waleedka/coco.git#subdire
 #
 RUN pip3 install http://download.pytorch.org/whl/cu75/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
 RUN pip3 install torchvision
+
+#
+# PycURL
+#
+RUN pip3 install pycurl
 
 #
 # Cleanup
