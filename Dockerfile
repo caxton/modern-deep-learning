@@ -134,6 +134,11 @@ RUN apt-get install -y --no-install-recommends libcurl4-openssl-dev libssl-dev
 RUN pip3 install pycurl
 
 #
+# Flask 
+#
+RUN pip3 install flask
+
+#
 # Cleanup
 #
 RUN apt-get clean && \
